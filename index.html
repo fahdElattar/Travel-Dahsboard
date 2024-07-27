@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Dashboard</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container container-grid-column-2 gap-1">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar d-flex flex-column">
+            <div class="logo-section">
+                <img src="./Img/mountain_logo.png" alt="Mountain Logo">
+            </div>
+            <div class="pagination-links d-flex justify-center flex-column">
+                <div class="sidebar-link link-active py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-name">Dashboard</span>
+                </div>
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <span class="link-name">Notes</span>
+                </div>
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-moon"></i>
+                    <span class="link-name">Theme</span>
+                </div>
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span class="link-name">Account</span>
+                </div>
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-microscope"></i>
+                    <span class="link-name">Explore</span>
+                </div>
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span class="link-name">Graph</span>
+                </div>
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="link-name">Messages</span>
+                </div>
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="link-name">Setting</span>
+                </div>
+            </div>
+            <div class="signout-link">
+                <div class="sidebar-link py-1 d-flex justify-start align-center">
+                    <i class="fa-solid fa-right-from-bracket sign-out-icon"></i>
+                    <span class="link-name">Sign-out</span>
+                </div>
+            </div>
+        </aside>
+        <!-- End Sidebar -->
+         
+        <!-- Main -->
+        <main class="px-2 d-flex flex-column">
+            
+            <!-- Header -->
+            <header class="gap-2 main-grid-column-2">
+                <div class="search-section d-flex gap-2 align-center">
+                    <div class="search-input">
+                        <i class="fa-solid fa-comments"></i>
+                        <input type="text" placeholder="Search for places">
+                    </div>
+                    <div class="search-settings d-flex justify-center align-center">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                </div>
+                <div class="user-section d-flex justify-between">
+                    <div class="user-location d-flex justify-center align-center gap-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="location-name">New York / Dc</span>
+                    </div>
+                    <div class="notification-user-grp d-flex justify-center align-center gap-2">
+                        <div class="notification-icon d-flex justify-center align-center">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="user-icon">
+                            <img src="./Img/user-img.png" alt="user-icon-img">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+
+            <div class="main-content main-grid-column-2 gap-2">
+
+                <!-- Discover Events Section -->
+                <section class="discover-events d-flex flex-column gap-1">
+
+                    <!-- Discover World -->
+                    <div class="discover-world d-flex flex-column">
+                        <h1 class="title">Discover World</h1>
+                        <div class="tags d-flex justify-start align-center gap-2">
+                            <span class="tag">Recommended</span>
+                            <span class="tag">Popular Places</span>
+                            <span class="tag">Trips</span>
+                        </div>
+                        <div class="discover-cards gap-1">
+                            <div class="card flex-grow d-flex flex-column gap-1">
+                                <div class="heart-icon d-flex justify-center align-center">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <img src="./Img/green_moon.jpg" alt="Green moon">
+                                <span class="card-title">Moonlight Night</span>
+                                <div class="card-more d-flex align-center gap-1">
+                                    <div class="card-location d-flex align-center gap-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="location-name">Canada</span>
+                                    </div>
+                                    <div class="card-rating d-flex align-center gap-1">
+                                        <i class="fa fa-star"></i>
+                                        <span class="rating">4.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card flex-grow d-flex flex-column gap-1">
+                                <div class="heart-icon d-flex justify-center align-center">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <img src="./Img/orange_sunset_desert.jpg" alt="Sahara">
+                                <span class="card-title">Sahara Desert</span>
+                                <div class="card-more d-flex align-center gap-1">
+                                    <div class="card-location d-flex align-center gap-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="location-name">Africa</span>
+                                    </div>
+                                    <div class="card-rating d-flex align-center gap-1">
+                                        <i class="fa fa-star"></i>
+                                        <span class="rating">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card flex-grow d-flex flex-column gap-1">
+                                <div class="heart-icon d-flex justify-center align-center">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <img src="./Img/orange_sunset_girl.jpg" alt="Green moon">
+                                <span class="card-title">Night Camping</span>
+                                <div class="card-more d-flex align-center gap-1">
+                                    <div class="card-location d-flex align-center gap-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="location-name">New York</span>
+                                    </div>
+                                    <div class="card-rating d-flex align-center gap-1">
+                                        <i class="fa fa-star"></i>
+                                        <span class="rating">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Discover World -->
+
+                    <!-- Event Dates -->
+                    <div class="events-dates d-flex flex-column">
+                        <div class="date-header d-flex align-center justify-between">
+                            <h1 class="title">Events Dates</h1>
+                            <span class="actual-date py-0">26 July 2024</span>
+                        </div>
+                        <div class="date-body d-flex align-center justify-between">
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">Mo</span>
+                                <span class="day-number">12</span>
+                            </div>
+                            <div class="date-item date-item-active d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">Tu</span>
+                                <span class="day-number">13</span>
+                            </div>
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">We</span>
+                                <span class="day-number">14</span>
+                            </div>
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">Th</span>
+                                <span class="day-number">15</span>
+                            </div>
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">Fr</span>
+                                <span class="day-number">16</span>
+                            </div>
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">St</span>
+                                <span class="day-number">17</span>
+                            </div>
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">Su</span>
+                                <span class="day-number">18</span>
+                            </div>
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">Mo</span>
+                                <span class="day-number">19</span>
+                            </div>
+                            <div class="date-item d-flex flex-column align-center gap-1 px-1 py-1">
+                                <span class="day-name">Tu</span>
+                                <span class="day-number">20</span>
+                            </div>
+                        </div>
+                        <div class="event-cards gap-2">
+                            <div class="event-card wide-card d-flex justify-between align-center px-1 py-1">
+                                <div class="card-left-section d-flex align-center gap-1">
+                                    <img src="./Img/abstract-mountain-range-background.jpg" alt="Event card">
+                                    <div class="card-info d-flex flex-column gap-0">
+                                        <p>Netherlands Travel Tour</p>
+                                        <div class="card-rating d-flex align-center gap-0">
+                                            <i class="fa fa-star"></i>
+                                            <span class="rating-light">4.7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-right-section px-0">
+                                    <i class="fa fa-equals"></i>
+                                </div>
+                            </div>
+                            <div class="event-card d-flex justify-center">
+                                <img src="./Img/lake-with-moon-water-trees.jpg" alt="Event card">
+                            </div>
+                            <div class="event-card d-flex justify-center">
+                                <img src="./Img/desert-landscape.jpg" alt="Event card">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Event Dates -->
+
+                </section>
+                <!-- End Discover Events Section -->
+
+                <!-- Trending Section -->
+                <section class="trending">
+                    <div class="forest">
+                        <div class="forest-img">
+                            <img src="./Img/bg4.webp" alt="Forest">
+                            <div class="more-images gap-0">
+                                <img src="./Img/bg1.jpg" alt="Forest">
+                                <img src="./Img/bg2.jpg" alt="Forest">
+                                <img src="./Img/bg7.jpg" alt="Forest">
+                                <img src="./Img/bg5.jpg" alt="Forest">
+                            </div>
+                        </div>
+                        <div class="forest-details">
+                            <div class="d-flex justify-between align-center">
+                                <h1 class="title">Brazil Forest</h1>
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <p>I spend ten minutes or so doing Duolingo lessons in French so</p>
+                        </div>
+                        <div class="forest-price d-flex justify-between align-center my-1">
+                            <div class="price-per-person d-flex flex-column">
+                                <span class="per-person">Per/Person</span>
+                                <span class="price">$1540</span>
+                            </div>
+                            <button class="btn py-1">Book Travel</button>
+                        </div>
+                        <div class="natural-spots d-flex flex-column gap-1">
+                            <div class="natural-spot d-flex justify-between align-center">
+                                <div class="d-flex align-center gap-1">
+                                    <img src="./Img/bg1.jpg" alt="Natural Spots">
+                                    <div class="d-flex flex-column gap-0">
+                                        <span class="card-title">Nature Lake</span>
+                                        <div class="natural-spot-location d-flex align-center gap-0">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="location-name">Afghanistan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Like-spot">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="natural-spot d-flex justify-between align-center">
+                                <div class="d-flex align-center gap-1">
+                                    <img src="./Img/bg2.jpg" alt="Natural Spots">
+                                    <div class="d-flex flex-column gap-0">
+                                        <span class="card-title">Camel Ride</span>
+                                        <div class="natural-spot-location d-flex align-center gap-0">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="location-name">Sirilanka</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Like-spot">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="natural-spot d-flex justify-between align-center">
+                                <div class="d-flex align-center gap-1">
+                                    <img src="./Img/bg5.jpg" alt="Natural Spots">
+                                    <div class="d-flex flex-column gap-0">
+                                        <span class="card-title">Mid Forest</span>
+                                        <div class="natural-spot-location d-flex align-center gap-0">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                            <span class="location-name">Brazil</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Like-spot">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Trending Section -->
+
+            </div>
+        </main>
+        <!-- End Main -->
+
+    </div>
+</body>
+</html>
